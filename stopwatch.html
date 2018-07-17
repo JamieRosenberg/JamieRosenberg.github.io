@@ -1,8 +1,25 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: green;
+            }
+            #container {
+                width: inherit;
+                height: inherit;
+                margin: 0;
+                padding: 0;
+                background-color: pink;
+            }
+            h1 {
+                margin: 0;
+                padding: 0;
+            }
 p {
   text-align: center;
   font-size: 20px;
@@ -13,6 +30,7 @@ p {
 </style>
 </head>
 <body>
+<div id="container">
 <p id="demo"></p>
 <script>
 // Set the date we're counting down to
@@ -43,5 +61,6 @@ var x = setInterval(function() {
     }
 }, 1000);
 </script>
+  </div>
 </body>
 </html>
